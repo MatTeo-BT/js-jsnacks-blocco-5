@@ -42,7 +42,12 @@ const users = [
 ]
 const adult = users.map ((user) => {
     if (user.age >= 18){
-        return `può guidare`
+        return true;
+    }else {
+        return false;
     }
 });
-console.log(adult)
+const nameSurname = users.map ((user) => {
+    return user.name + user.surname;
+});
+console.log(nameSurname, adult)
